@@ -1,0 +1,128 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 2
+
+   Mountain Wheels Text and Color Style
+   Author: Cedric Lutila Mulumba 
+   Date:  10/17/15 
+
+   Filename:         mw_layout.css
+   Supporting Files: none
+
+*/
+
+
+
+/*
+step 5
+*/
+body {
+  
+   font-family:'Tahoma, Geneva, sans-serif';
+}
+
+/*
+step 6
+*/
+
+ #articleheader {
+
+  font-size: 18px;
+  list-style-image: none;
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+/*
+step 7
+*/
+
+nav ul {
+   
+  background-color: rgb(125, 120, 89);
+  line-height: 3em;
+  list-style-type: none;
+       
+}
+
+/*
+step 8
+*/
+
+nav ul li a {
+
+  font-color: white;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+
+}
+
+/*
+step 9
+*/
+
+    nav: hover  {
+           background-color: rgb(131, 121, 36);
+           list-style-image: url(wheelmarker.png);               
+           font-color: yellow;
+           color: rgba(255, 255, 255, 1);
+}  
+
+
+/*
+step 10
+*/
+ 
+   #leftsection > p {
+
+    font-size: 22px;
+}
+     
+    #leftsection:first-in-line {
+    
+}
+
+/*
+step 11
+*/
+
+  blockquote {
+ 
+     background-color: rgb(131, 121, 36);
+     color: white;
+     font-size: 16px
+     font-family:comic Sans MS, Times, cursive;
+}
+
+/*step 13*/
+
+   #rightsection h1 {
+ 
+     font-size: 22px;
+     letter-spacing: 3px;
+     font-weight: none;
+     text-align:center;
+}
+
+   #rightsection h2 {
+
+   font-size: 18px;
+   text-align: right;
+   font-weight: none;
+}
+
+  #rightsection p {
+
+   font-color: gray;
+   font-size: 14px;
+    text-align: justify;
+}
+
+footer address {
+  
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+ 
+}

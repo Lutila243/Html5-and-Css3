@@ -1,0 +1,93 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case Problem 3
+
+   SkyWeb Print Styles
+   Author: laith alnajjar
+   Date:   12/12/2015
+
+   Filename:         swprint.css
+   Supporting Files: 
+
+*/
+
+
+/*step9*/
+@page{
+size: 8.5 in 11in portrait;
+margin: 0.5in;
+}
+footer,nav ,header {
+display:none;}
+
+
+/*step12*/
+article{
+padding: top padding is 1.5in;
+page-break-after: always;
+page-break-inside: avoid;
+/*step 13*/
+font-size: 13pt;
+margin: 0.2in;
+
+
+}
+/*step14*/
+h1.left{
+font-size: 28pt;
+text-align: horizontal center:
+
+}
+/*step24*/
+h1.right{
+font-size: 24pt;
+}
+#m01{
+display: block;
+margin-top: 0.5in;
+margin-bottom: 0.5;
+width: 4in;
+}
+/*step16*/
+#m13{
+display: block;
+margin-top: 0.5in;
+margin-bottom: 0.5;
+margin-left: auto;
+margin-right: auto;
+width: 4in;
+}
+#m16{
+display: block;
+margin-top: 0.5in;
+margin-bottom: 0.5;
+margin-left: auto;
+margin-right: auto;
+width: 4in;
+}
+#m20{
+display: block;
+margin-top: 0.5in;
+margin-bottom: 0.5;
+margin-left: auto;
+margin-right: auto;
+width: 4in;
+}
+#m27{
+display: block;
+margin-top: 0.5in;
+margin-bottom: 0.5;
+margin-left: auto;
+margin-right: auto;
+width: 4in;
+}
+#m31{
+display: block;
+margin-top: 0.5in;
+margin-bottom: 0.5;
+margin-left: auto;
+margin-right: auto;
+width: 4in;
+}
+

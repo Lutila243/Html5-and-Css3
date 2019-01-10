@@ -1,0 +1,96 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Tutorial Case
+
+   Print Styles
+   Author: cedric L mulumba
+   Date: 12/16/15  
+
+   Filename:         print.css
+   Supporting Files: 
+
+*/
+
+/* Styles to be used for print displays */
+
+
+/*
+hiding page elements in the printed output
+*/
+
+
+       header, nav, footer {
+
+          display: none;
+}
+
+
+/*
+setting the page size with the @page rule(hide page elements that will not be printed)
+*/
+
+      @page {
+     
+         size: 8.5in 11in portrait;
+         margin: 0.5in;
+}
+
+/*
+Defining page breaks within the printed output
+*/
+
+      article { 
+          
+         display: block;
+         page-break-after: always;
+         page-break-inside: avoid;
+}
+
+
+/*
+Styles for the h1 heading and main photo 
+*/
+
+       h1 {
+
+          font-size: 28pt;
+          text-align: center;
+          width: 100%;
+}
+
+
+       #photo1 {
+
+          display: block;
+          margin: 0in auto;
+          width: 4in;
+}
+
+/*
+Figure box styles
+*/
+
+
+        figure {
+
+           display: block;
+           text-align: center;
+           page-break-after: always;
+           page-break-inside: avoid;
+}
+
+
+       figure img {
+
+          width: 5in;
+}
+
+       figure figcaption {
+
+           font-size: 20pt;
+}
+
+       figure:last-of-type {
+          page-break-after: avoid;
+}

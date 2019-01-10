@@ -1,0 +1,56 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case Problem 3
+
+   Special Effects style sheet
+   Author: nIAMKE l M
+   Date:   12/21/2015
+
+   Filename: sweffects.css
+   Supporting Files: 
+
+*/
+
+
+body{
+	             background-image: radial-gradient(closest-corner at 40% 70%,#FFFFFF 0%, rgb(171,171,171),transparent),
+                     radial-gradient(closest-corner circle at 80% 20%, #FFFFFF 0%, rgb(171,171,171),transparent),
+                     radial-gradient(ellipse closest-side at 10% 10%, #FFFFFF 0%,rgb(171,171,171));   
+
+
+/*                    /* Safari 5.1 to 6.0 */
+
+                     background:-o-radial-gradient(closest-corner at 40% 70%,#FFFFFF 0%, rgb(171,171,171)
+                     ,transparent),
+                     radial-gradient(closest-corner circle at 80% 20%, #FFFFFF 0%, rgb(171,171,171),
+                      transparent),
+                     radial-gradient(ellipse closest-side at 10% 10%, #FFFFFF 0%,rgb(171,171,171));
+			
+
+                      /* For Opera 11.6 to 12.0 */
+		 
+                     background:-ms-radial-gradient(closest-corner at 40% 70%,#FFFFFF 0%, rgb(171,171,171),
+                     transparent),
+                     radial-gradient(closest-corner circle at 80% 20%, #FFFFFF 0%, rgb(171,171,171),
+                     transparent),
+                     radial-gradient(ellipse closest-side at 10% 10%, #FFFFFF 0%,rgb(171,171,171));	
+			
+		      / For Firefox 3.6 to 15 /
+                     background:-moz-radial-gradient(closest-corner at 40% 70%,#FFFFFF 0%, rgb(171,171,171),
+                      transparent),
+                     radial-gradient(closest-corner circle at 80% 20%, #FFFFFF 0%, rgb(171,171,171),
+                     transparent),
+                     radial-gradient(ellipse closest-side at 10% 10%, #FFFFFF 0%,rgb(171,171,171));
+
+/*                     / Standard syntax /
+                     background:-webkit-radial-gradient(closest-corner at 0% 180%,#FFFFFF 0%, rgb(171,171,171),
+                      transparent),
+                     radial-gradient(closest-corner circle at 0% 90%, #FFFFFF 0%, rgb(171,171,171),
+                      transparent),
+                     radial-gradient(ellipse closest-side at 0% 20%, #FFFFFF 0%,rgb(171,171,171));	
+			*/		 
+}
+
+	
+

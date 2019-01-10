@@ -1,0 +1,372 @@
+/*
+New Perspectives on HTML and CSS
+Tutorial 4
+Case Problem 2
+
+Pizza Style Sheet
+Author: Cedric Lutila Mulumba
+Date:   
+
+Filename:         pizza.css
+Supporting Files: notice.png, rblogo.png, redbar.png, slice.png, toppings.png
+
+*/
+
+
+/*
+step 3 & 4
+*/
+
+      header, section, aside, footer, nav {
+
+                                                display: block;
+}
+                               body* {
+                                                padding: 0px;
+                                                margin: 0px;
+                                              
+}
+
+/*
+step 5
+*/
+      
+                                      
+
+                                               
+       body{
+
+                                               background-color: red;
+                                               font-family: Verdana, Geneva, sans-serif;
+}
+
+/*
+step 6
+*/
+
+
+       #container{
+
+                                                width: 1000px;
+                                                margin-top: 0px;
+                                                margin-bottom: 0px;
+                                                margin-right: auto;
+                                                margin-left: auto;
+                                                border-right-style: 1px solid black;
+                                                border-left-style: 1px solid black;
+                                                background-color: white;
+                                                background: url(redbar.png);
+                                                background-repeat: repeat-y;
+
+}
+
+
+/*
+ step 7
+*/
+
+      #container header{
+
+                                                background-color: white;
+                                                height: 100px;
+}
+
+/*
+step 8
+*/
+
+      .horizontal{
+
+                                                height: 70px;
+                                                width: 100%;
+                                                background: white;
+}
+
+
+/*
+step 9
+*/
+     .horizontal ul li{
+                                                background-color: white;
+                                                font-size: 16px;
+                                                height: 50px;
+                                                line-height: 50px;
+                                                width: 180px;
+
+}
+
+
+      .horizontal ul li{
+
+                                                display: block;
+                                                float: left;
+                                                margin-right: 5px;
+                                                margin-left: 5px;
+                                                text-align: center;
+}
+
+
+/*
+step 10
+*/
+     .horizontal ul li a{
+
+                                                display: block;
+                                                background-color: red;
+                                                color: white;
+
+
+}
+
+     .horizontal ul li a{
+
+                                              border-radius: 30px 25px;
+                                              -moz-border-radius: 30px 25px;
+                                              -webkit-border-radius: 30px 25px;
+                                               text-decoration: none;
+}
+
+
+
+
+     .horizontal ul li a:hover{
+
+                                              background-color: rgb(255, 101, 101);
+                                              color: black;
+}
+
+/*
+step 11
+*/
+
+
+      nav.vertical{
+
+                                               float: left;
+                                               clear: left;
+                                               width: 200px;
+}
+
+
+/*
+step 12
+*/
+
+
+
+      nav.vertical ul li{
+
+
+                                               list-style-type: none;
+                                               text-indent: 20px;
+                                               margin-top: 20px;
+                                               margin-bottom: 20px;
+
+}
+
+
+
+
+/*
+step 13
+*/
+
+      nav.vertical ul li a{
+
+
+                                               color: white;
+                                               text-decoration: none;
+
+}
+
+
+
+       nav.vertical ul li a:hover{
+
+
+                                                color: black;
+
+}
+
+
+/*
+step 14
+*/
+
+
+       #main{
+
+                                                background-color: rgb(255, 211, 211);
+                                                float: left;
+                                                width: 600px;
+
+}
+
+
+/*
+step 15
+*/
+
+
+      #main p{
+
+                                                font-size: 20px;
+                                                margin: 15px;                                    
+
+}
+
+
+
+/*
+step 16
+*/
+
+      #main img{
+
+
+                                               float: right;
+                                               margin: 15px;
+                                               width: 350px;
+
+}
+
+
+      #main img{
+
+                                               border-bottom-left-radius: 350px;
+                                               -moz-border-radius-bottomleft: 350px;
+                                               -webkit-border-bottom-left-radius: 350px;
+}
+
+
+/*
+step 17
+*/
+
+       div.coupon{
+
+
+                                               border: 5px dashed black;
+                                               float: left;
+                                               width: 170px;
+                                               height: 150px;
+                                               margin-top: 20px;
+                                               margin-bottom: 20px;
+                                               margin-right: 10px;
+                                               margin-left: 10px;
+
+
+}                                         
+
+
+/*
+step 18
+*/
+
+
+
+       div.coupon{
+
+                                               background: url(slice.png) center center no-repeat,
+			                       url(notice.png)bottom right no-repeat white;
+
+}
+
+
+/*
+step 19
+*/
+       div.coupon h1{
+
+                                               color: white;
+                                               background: rgb(192, 0, 0);
+                                               font-size: 16px;
+                                               letter-spacing: 2px;
+                                               text-align: center;
+                                               height: 25px;
+                                               font-variant: small-caps;                        
+}
+
+
+/*
+step 20
+*/
+
+       #main div.coupon p{
+
+                                                font-size: 14px;
+                                                text-align: center;
+                                                margin: 5px;
+
+}
+
+/*
+step 21
+*/
+       aside{
+                                                float: left;
+                                                width: 200px;
+
+}
+
+/*
+step 22
+*/
+
+       aside h1{
+
+                                                color: rgb(192, 0, 0);
+                                                font-size: 20px;
+                                                letter-spacing: 2px;
+                                                word-spacing: 2px;
+                                                font-weight: normal;
+                                                text-align: center;
+}
+
+
+
+/*
+step 23
+*/
+
+
+       aside ul li{
+
+                                                background: rgb(255, 135, 135);
+                                                border-radius: 5px;
+                                                -moz-border-radius: 5px;
+                                                -webkit-border-radius: 5px;
+                                                 color: black;
+                                                 list-style-type: none;
+                                                 margin: 10px;
+                                                 padding: 5px;
+}
+
+/*
+step 24
+*/
+
+      footer{
+
+                                                 float: left;
+                                                 clear: left;
+                                                 margin-left: 200px;
+                                                    
+                                                 
+
+}
+
+/*
+step 25
+*/
+      footer address {
+
+                                                 border-top: 1px red solid;
+                                                 color: red;
+                                                 font-size: 10px;
+                                                 font-style: normal;
+                                                 text-align: center;
+                                                 margin-top: 25px;
+                                                 padding-bottom: 20px;
+}
+   

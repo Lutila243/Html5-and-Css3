@@ -1,0 +1,313 @@
+
+!DOCTYPE html
+html
+
+   head
+   !--
+      New Perspectives on HTML and CSS
+      Tutorial 6
+      Case Problem 2
+
+      The Spice Bowl
+      Author cedric L
+      Date 12215  
+
+      Filename         spice.htm
+      Supporting files diners.png, discover.png, formsubmit.js,
+                        go.png, master.png, modernizr-1.5.js, payment.css, 
+                        regex.txt, sb.css, sbback.png, sblogo.png,
+                        state.txt, stop.png, visa.png
+   --
+
+      meta charset=UTF-8 
+      titleSpice Bowl Financial Informationtitle
+      script src=modernizr-1.5.jsscript
+      script src=formsubmit.jsscript
+      link href=sb.css rel=stylesheet type=textcss 
+
+!--step 2--
+
+      link href=pay.css rel=stylesheet
+
+
+   head
+
+
+   body
+      header
+         img src=sblogo.png alt=The Spice Bowl 
+      header
+
+      nav
+         ul
+            li class=newgroupa href=#Homeali
+            lia href=#Keyword Searchali
+      
+            li class=newgroupa href=#Spicesali
+            lia href=#Seasoningsali
+            lia href=#Blendsali
+            lia href=#Salts &amp; Peppersali
+            lia href=#Popcorn Seasoningsali
+            lia href=#Dip Mixesali
+            lia href=#Bulk Spicesali
+            lia href=#Extractsali
+            lia href=#Flavoringsali
+      
+            li class=newgroupa href=#Spice Jarsali
+            lia href=#Spice Jar Labelsali
+            lia href=#Spice Setsali
+            lia href=#Mortar &amp; Pestlesali
+      
+            li class=newgroupa href=#Cookbooksali
+            lia href=#Online Recipesali
+            lia href=#Forumsali
+      
+            li class=newgroupa href=#My Accountali
+            lia href=#Checkoutali
+            lia href=#Order Historyali
+            lia href=#Shipping Infoali
+      
+            li class=newgroupa href=#Tech Supportali
+            lia href=#Hoursali
+            lia href=#Contact Usali
+         ul
+      nav
+
+      section
+
+         h1Payment Formh1
+
+!--step 3--
+
+         form id=spice name=spice
+            action=httpwww.thespicebowlcorp.comcgi-binpayement
+            post=method
+
+!--step 4--
+
+         fieldset id=billing
+            legendBilling Information (required)legend
+
+!--step 5--
+
+              label for=fNameFirst Namelabel
+         input name=fName id=fName required=required
+
+              label for=lNameLast Namelabel
+         input name=lName id=lName required=required
+
+              label for=streetStreet addresslabel
+         input name=street id=street required=required
+
+               label for=street2Street address (2)label
+         input name=street2 id=street2 
+
+
+              label for=cityCitylabel
+         input name=city id=city required=required
+
+!--step 6--
+
+         
+               label for=stateStatelabel
+          select name=state id=state 
+         option value=ALALoption
+         option value=AKAKoption
+         option value=AZAZoption
+         option value=ARARoption
+         option value=CACAoption
+         option value=COCOoption
+         option value=CTCToption
+         option value=DEDEoption
+         option value=FLFLoption
+         option value=GAGAoption
+         option value=HIHIoption
+         option value=IDIDoption
+         option value=ILILoption
+         option value=ININoption
+         option value=IAIAoption
+         option value=KSKSoption
+         option value=KYKYoption
+         option value=LALAoption
+         option value=MEMEoption
+         option value=MDMDoption
+         option value=MAMAoption
+         option value=MIMIoption
+         option value=MNMNoption
+      select
+
+!--step 7-- 
+  
+          label for=zipZIPPostal Codelabel
+         input name=zip id=zip pattern=^d{5}(-d{4})$
+                required=required
+
+!--step 8--
+    
+          label for=countryCountrylabel
+         input name=country id=country value=United States
+                required=required
+
+!--step 9--
+!--step 10--
+
+         label for=phonePhonelabel
+         input name=phone id=phone pattern=^d{10}$^((d{3})s)d{3}[s
+                required=required
+
+          
+         
+
+
+
+
+
+         fieldset
+
+         fieldset id=creditcard
+            legendCredit Card (required)legend
+
+!--step 11 & 15--
+
+             fieldset class=optionGroup
+         
+                input type=radio name=ccard id=cdiners
+                value=dinersrequired=required
+                label for=dinersimg src=diners.pnglabel
+                 
+         
+         
+         
+                input type=radio name=ccard id=cdiscover
+                value=discoverrequired=required
+                label for=discoverimg src=discover.pnglabel
+                
+         
+         
+                input type=radio name=ccard id=cmaster
+                value=masterrequired=required
+                label for=masterimg src=master.pnglabel
+                
+         
+
+         
+                input type=radio name=ccard id=cvisa
+                value=visarequired=required
+                label for=visaimg src=visa.pnglabel
+
+!--step 12--
+
+                 br
+                 label for=ccardnumberCredit Card Numberlabel
+                     input name=ccardnumber id=ccardnumber 
+                        pattern=^(4[0-9]{12}([0-9]{3})5[1-5][0-9]{14}6(011
+                        5[0-9][0-9])[0-9]{12}3[47][0-9]{13}3(0[0-5][68][0-9])[0-9]
+                        required=required 
+
+!--step 13--
+                   br
+                   label for=ccardnumberExpiration Datelabel
+
+                        select name=ccardmonth id=ccardmonth 
+                           option value=monthMonthoption
+                           option value=01January(01)option
+			   option value=02February(02)option
+                            option value=03March(03)option
+                            option value=04April(04)option
+                            option value=05May(05)option
+                            option value=06June(06)option
+                            option value=07July(07)option
+                            option value=08August(08)option
+                            option value=09September(09)option
+                            option value=10October(10)option
+                            option value=11November(11)option
+			    option value=12December(12)option
+			select	
+   
+
+
+                  select name=ccardyear id=ccardyear 
+                           option value=yearYearoption
+                           option value=012014option
+			   option value=022015option
+                           option value=032016option
+                           option value=042017option
+                           option value=052018option
+                        select
+!--step 14--        
+                        br
+                   label for=cscCSClabel
+                        input name=csc id=csc placeholder=nnn pattern=^d{3}$
+                               required=required
+                        
+         
+         fieldset
+
+         fieldset id=info
+            legendAdditional Informationlegend
+             
+!--step 16--
+
+                     label for=cmail id=cmailContact Emaillabel  
+                             input name=cmail id=cmail type=email
+                             
+!--step 17--
+
+                    label for=notes id=notesSpecial Noteslabel
+                          textarea name=comments id=commentstextarea
+
+
+         fieldset
+
+
+!--step 19--
+
+         input type=submit id=submit value=Submit Order
+
+         form
+
+         footer
+            addressThe Spice Bowl &#183; 871 Park St. &#183; 
+                     East Point, GA 30344
+                     &#183; (404) 555- 8711
+            address
+
+         footer
+
+      section
+
+
+      aside
+         h1The Spice Bowl Recommendsh1
+         h2Salt-Roasted Pecansh2
+         ul
+            li2 cups pecansli
+            li3 Tbs. butter, meltedli
+            li1 14 tsp. fine sea saltli
+         ul
+         pPreheat oven to 325&deg;. Toss pecans and butter together; 
+            add salt and toss again.  Spread in a single layer on a baking 
+            sheet.  Bake about 15 minutes.  Cook on baking sheet.
+         p
+
+         h2Dried Beef Sticksh2
+         ul
+            li5 lbs. ground chuckli
+            li5 Tbs. quick saltli
+            li3 tsp. mustard seedli
+            li2 tsp. granulated garlicli
+            li2 tsp. cracked pepperli
+            li1 Tbs. hickory smoked saltli
+            li1 Tbs. liquid smokeli
+         ul
+         pMix beef and season.  Place in a large covered container 
+            for three days; make sure beef is thoroughly mixed each day.  
+            On third day, shape beef into sticks, and bake at 150&deg; for 
+            8 hours (turn half-way through).
+         p
+      aside
+
+
+   body
+
+html
