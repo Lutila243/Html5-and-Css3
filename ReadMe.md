@@ -1,3 +1,3 @@
 #My Html5 and Css3
 
-these are my Homeworks and labs
+These are my Homeworks and labs. run the HTML files trhough a browser
